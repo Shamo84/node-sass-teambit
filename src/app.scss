@@ -28,9 +28,7 @@
         font-weight: 500;
         display: inline-block;
         margin-left: 30px;
-
         &:hover,
-        &:hover i,
         &:hover a {
           color: #5252CC;
         }
@@ -38,7 +36,27 @@
     }
   }
 }
-.fas {
-  color: #5252CC;
 
+.jumbotron {
+  margin-top: 200px;
+  display: flex;
+  .jumbo_text {
+    width: 50%;
+    h1 {
+      font-size: 50px;
+      font-weight: 500;
+      line-height: 70px;
+    }
+    h2 {
+      margin: 35px 0;
+    }
+    img {
+      height: 18px;
+      vertical-align: bottom;
+      margin-right: 5px;
+    }
+  }
+  & > img {
+    width: 50%;
+  }
 }

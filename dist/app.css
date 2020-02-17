@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
-  color: #626226;
+  color: #58402c;
 }
 
 a {
@@ -13,6 +13,19 @@ a {
 svg {
   color: #5252CC;
   font-size: 40px;
+}
+
+.btn {
+  padding: 8px 20px;
+  background-color: #30488f;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn:hover {
+  background-color: #233569;
 }
 
 #navbar {
@@ -53,12 +66,36 @@ svg {
 }
 
 #navbar .nav_container ul li:hover,
-#navbar .nav_container ul li:hover i,
 #navbar .nav_container ul li:hover a {
   color: #5252CC;
 }
 
-.fas {
-  color: #5252CC;
+.jumbotron {
+  margin-top: 200px;
+  display: flex;
+}
+
+.jumbotron .jumbo_text {
+  width: 50%;
+}
+
+.jumbotron .jumbo_text h1 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 70px;
+}
+
+.jumbotron .jumbo_text h2 {
+  margin: 35px 0;
+}
+
+.jumbotron .jumbo_text img {
+  height: 18px;
+  vertical-align: bottom;
+  margin-right: 5px;
+}
+
+.jumbotron > img {
+  width: 50%;
 }
 

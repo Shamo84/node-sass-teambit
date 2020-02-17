@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  color: #626226;
+  color: #58402c;
 
 }
 
@@ -14,4 +14,16 @@ a {
 svg {
   color: #5252CC;
   font-size: 40px;
+}
+
+.btn {
+  padding: 8px 20px;
+  background-color: #30488f;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  &:hover {
+    background-color: #233569;
+  }
 }
