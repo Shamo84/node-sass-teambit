@@ -1,0 +1,44 @@
+@import "partials/common.scss";
+
+#navbar {
+  top: 0;
+  background-color: white;
+  width: 100%;
+  height: 75px;
+  z-index: 2;
+  border-bottom: 1px solid black;
+  padding: 0 25px;
+  position: fixed;
+  .nav_container {
+    width: 1150px;
+    max-width: 100%;
+    height: 75px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    .logo_container {
+      flex-grow: 2;
+    }
+    ul {
+      list-style: none;
+      li {
+        font-size: 14px;
+        font-weight: 500;
+        display: inline-block;
+        margin-left: 30px;
+
+        &:hover,
+        &:hover i,
+        &:hover a {
+          color: #5252CC;
+        }
+      }
+    }
+  }
+}
+.fas {
+  color: #5252CC;
+
+}
