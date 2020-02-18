@@ -1,4 +1,8 @@
-@import "partials/common.scss";
+@import "partials/_common.scss";
+@import "partials/_variables.scss";
+
+
+
 
 #navbar {
   top: 0;
@@ -6,7 +10,7 @@
   width: 100%;
   height: 75px;
   z-index: 2;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid darkgrey;
   padding: 0 25px;
   position: fixed;
   .nav_container {
@@ -27,36 +31,120 @@
         font-size: 14px;
         font-weight: 500;
         display: inline-block;
-        margin-left: 30px;
+        margin-right: 35px;
+        position: relative;
+        line-height: 30px;
         &:hover,
-        &:hover a {
-          color: #5252CC;
+        &:hover i.fas,
+        &:hover > a {
+          color: $textcolorhover;
+        }
+        ul.dropdown {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: 27px;
+          border: 1px solid lightgrey;
+          border-radius: 8px;
+          padding-right: 20px;
+          background-color: white;
+          li {
+            display: block;
+            margin: 18px 12px;
+            line-height: normal;
+          }
+        }
+        span.btn {
+          background-color: white;
+          color: $textcolorhover;
+          border: 1px solid $textcolorhover;
+          padding-left: 12px;
+          padding-right: 12px;
+          &:hover{
+            background-color: $buttonbackgroundhover;
+            color: white;
+          }
+          &:hover img{
+            filter: brightness(10000%) contrast(1000%);
+          }
+          img {
+            height: 16px;
+            margin-right: 6px;
+            vertical-align: text-top;
+          }
         }
       }
+    }
+    i.fas {
+      display: none;
+      font-size: 23px;
+      cursor: pointer;
     }
   }
 }
 
+main {
+  padding: 0 25px;
+}
+
 .jumbotron {
-  margin-top: 200px;
+  margin-top: 180px;
+  width: 1150px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   .jumbo_text {
-    width: 50%;
+    margin-bottom: 30px;
+    width: 570px;
     h1 {
       font-size: 50px;
       font-weight: 500;
       line-height: 70px;
+      margin-bottom: 35px
     }
     h2 {
-      margin: 35px 0;
+      margin-bottom: 40px;
+      font-weight: 100;
     }
-    img {
-      height: 18px;
-      vertical-align: bottom;
-      margin-right: 5px;
+    a {
+      font-size: 14px;
+      margin-top: 30px;
+      display: inline-block;
+    }
+    p {
+      font-size: 13px;
+      color: lightgrey;
+      margin: 0 15px;
+      display: inline-block;
     }
   }
-  & > img {
-    width: 50%;
+  .jumbo_img {
+    width: 570px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .jumbotron {
+    .jumbo_text {
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  #navbar {
+    height: 60px;
+    .nav_container {
+      height: 60px;
+      ul.sections {
+        display: none;
+      }
+      i.fas {
+        display: block;
+      }
+    }
   }
 }

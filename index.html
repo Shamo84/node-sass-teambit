@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
   <link rel="stylesheet" href="dist/app.css">
   <title>Document</title>
 </head>
@@ -17,13 +17,23 @@
           <img src="img/logo.svg" alt="logo teambit">
 
         </div>
-        <ul>
-          <li>Solutions <i class="fas fa-caret-down"></i></li>
+        <ul class="sections">
+          <li id="solutions">Solutions
+            <i class="fas fa-caret-down"></i>
+            <ul class="dropdown hidden">
+              <li><a href="">Feedback</a></li>
+              <li><a href="">Surveys</a></li>
+              <li><a href="">Reviews</a></li>
+              <li><a href="">Praise</a></li>
+
+            </ul>
+          </li>
           <li><a href=""> Pricing</a></li>
           <li><a href="">Blog</a></li>
           <li><a href="">Sign in</a></li>
-          <li><a href="">Sign up</a></li>
+          <li><span class="btn"><img src="img/google_logo.png" alt="logo google">Sign up</span></li>
         </ul>
+        <i class="fas fa-bars"></i>
       </div>
     </div>
   </header>
@@ -32,10 +42,10 @@
       <div class="jumbo_text">
         <h1>Understand, recognize and develop your people</h1>
         <h2>Teambit helps teams create a high performing culture with regular feedback.</h2>
-        <p> <span class="btn"><img src="img/google_logo.png" alt="logo google">Sign up with Google</span>or<span class="btn">Sign up with Slack</span></p>
+        <div><span class="btn"><img src="img/google_logo.png" alt="logo google">Sign up with Google</span><p>or</p><span class="btn"><img src="img/slack_logo.png" alt="logo google">Sign up with Slack</span></div>
         <a href="#">or use your email address →</a>
       </div>
-      <img src="img/illustration-main.jpg" alt="illustration-main">
+      <img class="jumbo_img" src="img/illustration-main.jpg" alt="illustration-main">
     </div>
   </main>
   <footer>

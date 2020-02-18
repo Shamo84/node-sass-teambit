@@ -10705,7 +10705,16 @@ return jQuery;
 
 var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
-$(document).ready(function () {});
+$(document).ready(function () {
+  $("#solutions").hover(function () {
+    $(this).children(".dropdown").removeClass("hidden");
+  }, function () {
+    $(this).children(".dropdown").addClass("hidden");
+  });
+  $(".nav_container > i.fas").click(function () {
+    $(this).toggleClass("fa-bars fa-times");
+  });
+});
 
 /***/ }),
 

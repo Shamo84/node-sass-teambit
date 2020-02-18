@@ -1,0 +1,44 @@
+@import "partials/_variables.scss";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $textcolor;
+}
+
+a {
+  text-decoration: none;
+  color: $textcolor;
+}
+
+@mixin button {
+  padding: 8px 18px;
+  background-color: $buttonbackground;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: .5s;
+  &:hover {
+    background-color: $buttonbackgroundhover;
+  }
+  & img {
+    height: 18px;
+    vertical-align: bottom;
+    margin-right: 5px;
+    transition: .2s;
+  }
+}
+
+.btn {
+  @include button;
+}
+
+.hidden {
+  display: none;
+}
