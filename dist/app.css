@@ -37,7 +37,6 @@ a {
   height: 18px;
   vertical-align: bottom;
   margin-right: 5px;
-  transition: 0.2s;
 }
 
 .white-btn {
@@ -66,6 +65,7 @@ a {
   height: 16px;
   margin-right: 6px;
   vertical-align: text-top;
+  transition: 0.2s;
 }
 
 .hidden {

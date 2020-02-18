@@ -28,7 +28,7 @@ a {
   font-weight: 500;
 }
 
-@mixin blue-button {
+.blue-btn {
   @include button;
   padding: 8px 18px;
   background-color: $buttonbackground;
@@ -40,16 +40,15 @@ a {
     height: 18px;
     vertical-align: bottom;
     margin-right: 5px;
-    transition: .2s;
   }
 }
-@mixin white-button {
+
+.white-btn {
   @include button;
   background-color: white;
   color: $textcolorhover;
   border: 1px solid $textcolorhover;
   padding: 8px 12px;
-
   &:hover{
     background-color: $buttonbackgroundhover;
     color: white;
@@ -61,15 +60,8 @@ a {
     height: 16px;
     margin-right: 6px;
     vertical-align: text-top;
+    transition: .2s;
   }
-}
-
-.blue-btn {
-  @include blue-button;
-}
-
-.white-btn {
-  @include white-button;
 }
 
 .hidden {
