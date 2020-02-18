@@ -10711,8 +10711,14 @@ $(document).ready(function () {
   }, function () {
     $(this).children(".dropdown").addClass("hidden");
   });
-  $(".nav_container > i.fas").click(function () {
-    $(this).toggleClass("fa-bars fa-times");
+  $(document).on("click", function (event) {
+    if ($(event.target).hasClass("fa-bars")) {
+      $(event.target).toggleClass("fa-bars fa-times");
+      $(event.target).parents("#navbar").children(".bars_dropdown").removeClass("hidden");
+    } else if ($(event.target).hasClass("fa-times")) {
+      $(event.target).toggleClass("fa-bars fa-times");
+      $(event.target).parents("#navbar").children(".bars_dropdown").addClass("hidden");
+    }
   });
 });
 

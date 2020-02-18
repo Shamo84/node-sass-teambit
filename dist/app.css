@@ -23,6 +23,7 @@ a {
   cursor: pointer;
   font-size: 14px;
   transition: 0.5s;
+  font-weight: 500;
   padding: 8px 18px;
   background-color: #30488f;
   color: white;
@@ -44,11 +45,11 @@ a {
   cursor: pointer;
   font-size: 14px;
   transition: 0.5s;
+  font-weight: 500;
   background-color: white;
   color: #5252CC;
   border: 1px solid #5252CC;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding: 8px 12px;
 }
 
 .white-btn:hover {
@@ -68,7 +69,7 @@ a {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 #navbar {
@@ -77,7 +78,6 @@ a {
   width: 100%;
   height: 75px;
   z-index: 2;
-  border-bottom: 1px solid darkgrey;
   padding: 0 25px;
   position: fixed;
 }
@@ -91,6 +91,7 @@ a {
   transform: translateX(-50%);
   display: flex;
   align-items: center;
+  border-bottom: 1px solid darkgrey;
 }
 
 #navbar .nav_container .logo_container {
@@ -101,7 +102,7 @@ a {
   font-size: 14px;
   font-weight: 500;
   display: inline-block;
-  margin-right: 35px;
+  margin-left: 35px;
   position: relative;
   line-height: 30px;
 }
@@ -143,6 +144,7 @@ a {
   left: 0;
   top: 60px;
   padding: 10px 25px;
+  display: none;
 }
 
 #navbar ul.bars_dropdown li {
@@ -152,6 +154,19 @@ a {
 #navbar ul.bars_dropdown li a {
   font-size: 14px;
   font-weight: 500;
+}
+
+#navbar ul.bars_dropdown li:hover a {
+  color: #5252CC;
+}
+
+#navbar ul.bars_dropdown #btn_long {
+  margin-top: 25px;
+}
+
+#navbar ul.bars_dropdown #btn_long span.white-btn {
+  padding-left: calc(50% - 36px);
+  padding-right: calc(50% - 36px);
 }
 
 main {
@@ -224,6 +239,10 @@ main {
   }
 
   #navbar .nav_container i.fas {
+    display: block;
+  }
+
+  #navbar ul.bars_dropdown {
     display: block;
   }
 }
