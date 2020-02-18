@@ -26,7 +26,6 @@
       flex-grow: 2;
     }
     ul {
-      list-style: none;
       li {
         font-size: 14px;
         font-weight: 500;
@@ -55,30 +54,30 @@
           }
         }
         span.btn {
-          background-color: white;
-          color: $textcolorhover;
-          border: 1px solid $textcolorhover;
-          padding-left: 12px;
-          padding-right: 12px;
-          &:hover{
-            background-color: $buttonbackgroundhover;
-            color: white;
-          }
-          &:hover img{
-            filter: brightness(10000%) contrast(1000%);
-          }
-          img {
-            height: 16px;
-            margin-right: 6px;
-            vertical-align: text-top;
-          }
+
         }
       }
     }
-    i.fas {
+    & > i.fas {
       display: none;
       font-size: 23px;
       cursor: pointer;
+    }
+  }
+  ul.bars_dropdown {
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    padding: 10px 25px;
+    li {
+      margin: 15px 0;
+      a {
+        font-size: 14px;
+        font-weight: 500;
+      }
     }
   }
 }

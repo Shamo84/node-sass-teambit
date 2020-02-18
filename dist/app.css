@@ -9,30 +9,62 @@ body {
   color: #58402c;
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
   color: #58402c;
 }
 
-.btn {
-  padding: 8px 18px;
-  background-color: #30488f;
+.blue-btn {
   border-radius: 6px;
-  color: white;
   cursor: pointer;
   font-size: 14px;
   transition: 0.5s;
+  padding: 8px 18px;
+  background-color: #30488f;
+  color: white;
 }
 
-.btn:hover {
+.blue-btn:hover {
   background-color: #233569;
 }
 
-.btn img {
+.blue-btn img {
   height: 18px;
   vertical-align: bottom;
   margin-right: 5px;
   transition: 0.2s;
+}
+
+.white-btn {
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.5s;
+  background-color: white;
+  color: #5252CC;
+  border: 1px solid #5252CC;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.white-btn:hover {
+  background-color: #233569;
+  color: white;
+}
+
+.white-btn:hover img {
+  -webkit-filter: brightness(10000%) contrast(1000%);
+          filter: brightness(10000%) contrast(1000%);
+}
+
+.white-btn img {
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: text-top;
 }
 
 .hidden {
@@ -63,10 +95,6 @@ a {
 
 #navbar .nav_container .logo_container {
   flex-grow: 2;
-}
-
-#navbar .nav_container ul {
-  list-style: none;
 }
 
 #navbar .nav_container ul li {
@@ -101,34 +129,29 @@ a {
   line-height: normal;
 }
 
-#navbar .nav_container ul li span.btn {
-  background-color: white;
-  color: #5252CC;
-  border: 1px solid #5252CC;
-  padding-left: 12px;
-  padding-right: 12px;
-}
-
-#navbar .nav_container ul li span.btn:hover {
-  background-color: #233569;
-  color: white;
-}
-
-#navbar .nav_container ul li span.btn:hover img {
-  -webkit-filter: brightness(10000%) contrast(1000%);
-          filter: brightness(10000%) contrast(1000%);
-}
-
-#navbar .nav_container ul li span.btn img {
-  height: 16px;
-  margin-right: 6px;
-  vertical-align: text-top;
-}
-
-#navbar .nav_container i.fas {
+#navbar .nav_container > i.fas {
   display: none;
   font-size: 23px;
   cursor: pointer;
+}
+
+#navbar ul.bars_dropdown {
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+  background-color: white;
+  position: fixed;
+  left: 0;
+  top: 60px;
+  padding: 10px 25px;
+}
+
+#navbar ul.bars_dropdown li {
+  margin: 15px 0;
+}
+
+#navbar ul.bars_dropdown li a {
+  font-size: 14px;
+  font-weight: 500;
 }
 
 main {

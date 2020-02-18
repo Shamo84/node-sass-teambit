@@ -11,19 +11,27 @@ body {
   color: $textcolor;
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
   color: $textcolor;
 }
 
 @mixin button {
-  padding: 8px 18px;
-  background-color: $buttonbackground;
   border-radius: 6px;
-  color: white;
   cursor: pointer;
   font-size: 14px;
   transition: .5s;
+}
+
+@mixin blue-button {
+  @include button;
+  padding: 8px 18px;
+  background-color: $buttonbackground;
+  color: white;
   &:hover {
     background-color: $buttonbackgroundhover;
   }
@@ -34,9 +42,33 @@ a {
     transition: .2s;
   }
 }
-
-.btn {
+@mixin white-button {
   @include button;
+  background-color: white;
+  color: $textcolorhover;
+  border: 1px solid $textcolorhover;
+  padding-left: 12px;
+  padding-right: 12px;
+  &:hover{
+    background-color: $buttonbackgroundhover;
+    color: white;
+  }
+  &:hover img{
+    filter: brightness(10000%) contrast(1000%);
+  }
+  img {
+    height: 16px;
+    margin-right: 6px;
+    vertical-align: text-top;
+  }
+}
+
+.blue-btn {
+  @include blue-button;
+}
+
+.white-btn {
+  @include white-button;
 }
 
 .hidden {
