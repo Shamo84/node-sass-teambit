@@ -4,11 +4,6 @@
   margin: 0;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  color: #58402c;
-}
-
 ul {
   list-style: none;
 }
@@ -70,6 +65,11 @@ a {
 
 .hidden {
   display: none !important;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #58402c;
 }
 
 #navbar {
@@ -186,7 +186,7 @@ main {
 
 .jumbotron .jumbo_text {
   margin-bottom: 30px;
-  width: 570px;
+  width: 567px;
 }
 
 .jumbotron .jumbo_text h1 {
@@ -215,7 +215,7 @@ main {
 }
 
 .jumbotron .jumbo_img {
-  width: 570px;
+  width: 567px;
   height: auto;
 }
 

@@ -1,6 +1,11 @@
 @import "partials/_common.scss";
 @import "partials/_variables.scss";
 
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $textcolor;
+}
+
 #navbar {
   top: 0;
   background-color: white;
@@ -58,6 +63,7 @@
       cursor: pointer;
     }
   }
+
   ul.bars_dropdown {
     width: 100%;
     border-bottom: 1px solid lightgrey;
@@ -102,7 +108,7 @@ main {
   flex-wrap: wrap;
   .jumbo_text {
     margin-bottom: 30px;
-    width: 570px;
+    width: 567px;
     h1 {
       font-size: 50px;
       font-weight: 500;
@@ -126,7 +132,7 @@ main {
     }
   }
   .jumbo_img {
-    width: 570px;
+    width: 567px;
     height: auto;
   }
 }
